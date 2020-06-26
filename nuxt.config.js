@@ -1,5 +1,6 @@
 import head from '~/configs/head'
 import modules from '~/configs/modules'
+import buildModules from '~/configs/buildModules'
 
 export default {
 	mode: 'spa',
@@ -7,10 +8,9 @@ export default {
 
 	head,
 	modules,
+	buildModules,
 	css: [],
 	plugins: [],
-	components: true,
-	buildModules: ['@nuxtjs/eslint-module'],
 	axios: {},
 	build: {},
 }
