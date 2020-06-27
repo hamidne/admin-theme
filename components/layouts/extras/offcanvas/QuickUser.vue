@@ -235,7 +235,7 @@
 </style>
 
 <script>
-import { LOGOUT } from '@/core/services/store/auth.module'
+// import { LOGOUT } from '@/core/services/store/auth.module'
 import KTLayoutQuickUser from '~/assets/js/layout/extended/quick-user.js'
 
 export default {
@@ -285,9 +285,9 @@ export default {
 	},
 	methods: {
 		onLogout() {
-			this.$store
-				.dispatch(LOGOUT)
-				.then(() => this.$router.push({ name: 'login' }))
+			// this.$store
+			// 	.dispatch(LOGOUT)
+			// 	.then(() => this.$router.push({ name: 'login' }))
 		},
 	},
 }

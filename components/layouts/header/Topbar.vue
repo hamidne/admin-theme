@@ -166,7 +166,7 @@ import KTDropdownMyCart from '~/components/layouts/extras/dropdown/DropdownMyCar
 import KTDropdownLanguage from '~/components/layouts/extras/dropdown/DropdownLanguage.vue'
 import KTQuickUser from '~/components/layouts/extras/offcanvas/QuickUser.vue'
 import KTQuickPanel from '~/components/layouts/extras/offcanvas/QuickPanel.vue'
-import i18nService from '@/core/services/i18n.service.js'
+// import i18nService from '@/core/services/i18n.service.js'
 
 export default {
 	name: 'KTTopbar',
@@ -182,7 +182,8 @@ export default {
 	data() {
 		return {
 			languageFlag: '',
-			languages: i18nService.languages,
+			languages: 'en',
+			// languages: i18nService.languages,
 		}
 	},
 	computed: {
@@ -193,7 +194,8 @@ export default {
 	methods: {
 		onLanguageChanged() {
 			this.languageFlag = this.languages.find((val) => {
-				return val.lang === i18nService.getActiveLanguage()
+				return false
+				// return val.lang === i18nService.getActiveLanguage()
 			}).flag
 		},
 	},

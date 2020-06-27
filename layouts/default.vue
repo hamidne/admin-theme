@@ -63,7 +63,7 @@ import KTFooter from '~/components/layouts/footer/Footer.vue'
 import KTSubheader from '~/components/layouts/subheader/Subheader.vue'
 import KTStickyToolbar from '~/components/layouts/extras/StickyToolbar.vue'
 import KTScrollTop from '~/components/layouts/extras/ScrollTop'
-import Loader from '@/view/content/Loader.vue'
+import Loader from '~/components/global/Loader.vue'
 
 export default {
 	name: 'Layout',

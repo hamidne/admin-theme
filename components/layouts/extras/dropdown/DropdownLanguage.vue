@@ -23,18 +23,20 @@
 </template>
 
 <script>
-import i18nService from '@/core/services/i18n.service.js'
+// import i18nService from '@/core/services/i18n.service.js'
 
 export default {
 	name: 'KTDropdownLanguage',
 	data() {
 		return {
-			languages: i18nService.languages,
+			languages: 'en',
+			// languages: i18nService.languages,
 		}
 	},
 	computed: {
 		activeLanguage() {
-			return i18nService.getActiveLanguage()
+			return ''
+			// return i18nService.getActiveLanguage()
 		},
 	},
 	methods: {
@@ -42,7 +44,7 @@ export default {
 			const el = e.target.closest('.navi-link')
 			const lang = el.getAttribute('data-lang')
 
-			i18nService.setActiveLanguage(lang)
+			// i18nService.setActiveLanguage(lang)
 
 			this.$emit(
 				'language-changed',
