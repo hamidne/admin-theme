@@ -1,20 +1,20 @@
 <template>
 	<div class="d-flex flex-column flex-root">
 		<!-- begin:: Header Mobile -->
-		<KTHeaderMobile></KTHeaderMobile>
+		<KTHeaderMobile />
 		<!-- end:: Header Mobile -->
 
-		<Loader v-if="loaderEnabled" :logo="loaderLogo"></Loader>
+		<Loader v-if="loaderEnabled" :logo="loaderLogo" />
 
 		<!-- begin::Body -->
 		<div class="d-flex flex-row flex-column-fluid page">
 			<!-- begin:: Aside Left -->
-			<KTAside v-if="asideEnabled"></KTAside>
+			<KTAside v-if="asideEnabled" />
 			<!-- end:: Aside Left -->
 
 			<div id="kt_wrapper" class="d-flex flex-column flex-row-fluid wrapper">
 				<!-- begin:: Header -->
-				<KTHeader></KTHeader>
+				<KTHeader />
 				<!-- end:: Header -->
 
 				<!-- begin:: Content -->
@@ -46,29 +46,24 @@
 						</div>
 					</div>
 				</div>
-				<KTFooter></KTFooter>
+				<KTFooter />
 			</div>
 		</div>
-		<KTStickyToolbar v-if="toolbarDisplay"></KTStickyToolbar>
-		<KTScrollTop></KTScrollTop>
+		<KTStickyToolbar v-if="toolbarDisplay" />
+		<KTScrollTop />
 	</div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import KTAside from '@/view/layout/aside/Aside.vue'
-import KTHeader from '@/view/layout/header/Header.vue'
-import KTHeaderMobile from '@/view/layout/header/HeaderMobile.vue'
-import KTFooter from '@/view/layout/footer/Footer.vue'
-import HtmlClass from '@/core/services/htmlclass.service'
-import KTSubheader from '@/view/layout/subheader/Subheader.vue'
-import KTStickyToolbar from '@/view/layout/extras/StickyToolbar.vue'
-import KTScrollTop from '@/view/layout/extras/ScrollTop'
+import KTAside from '~/components/layouts/aside/Aside.vue'
+import KTHeader from '~/components/layouts/header/Header.vue'
+import KTHeaderMobile from '~/components/layouts/header/HeaderMobile.vue'
+import KTFooter from '~/components/layouts/footer/Footer.vue'
+import KTSubheader from '~/components/layouts/subheader/Subheader.vue'
+import KTStickyToolbar from '~/components/layouts/extras/StickyToolbar.vue'
+import KTScrollTop from '~/components/layouts/extras/ScrollTop'
 import Loader from '@/view/content/Loader.vue'
-import {
-	ADD_BODY_CLASSNAME,
-	REMOVE_BODY_CLASSNAME,
-} from '@/core/services/store/htmlclass.module.js'
 
 export default {
 	name: 'Layout',
@@ -82,33 +77,9 @@ export default {
 		KTScrollTop,
 		Loader,
 	},
-	beforeMount() {
-		// show page loading
-		this.$store.dispatch(ADD_BODY_CLASSNAME, 'page-loading')
-
-		// initialize html element classes
-		HtmlClass.init(this.layoutConfig())
-	},
-	mounted() {
-		// check if current user is authenticated
-		if (!this.isAuthenticated) {
-			this.$router.push({ name: 'login' })
-		}
-
-		// Simulate the delay page loading
-		setTimeout(() => {
-			// Remove page loader after some time
-			this.$store.dispatch(REMOVE_BODY_CLASSNAME, 'page-loading')
-		}, 2000)
-	},
 	methods: {},
 	computed: {
-		...mapGetters([
-			'isAuthenticated',
-			'breadcrumbs',
-			'pageTitle',
-			'layoutConfig',
-		]),
+		...mapGetters(['breadcrumbs', 'pageTitle', 'layoutConfig']),
 
 		/**
 		 * Check if the page loader is enabled
