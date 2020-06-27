@@ -344,7 +344,7 @@
 </template>
 
 <script>
-import KTLayoutQuickPanel from '@/assets/js/layout/extended/quick-panel.js'
+import KTLayoutQuickPanel from '~/assets/js/layout/extended/quick-panel.js'
 
 export default {
 	name: 'KTQuickPanel',

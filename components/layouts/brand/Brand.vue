@@ -33,8 +33,8 @@
 <script>
 import { mapGetters } from 'vuex'
 import objectPath from 'object-path'
-import KTLayoutBrand from '@/assets/js/layout/base/brand.js'
-import KTLayoutAsideToggle from '@/assets/js/layout/base/aside-toggle.js'
+import KTLayoutBrand from '~/assets/js/layout/base/brand.js'
+import KTLayoutAsideToggle from '~/assets/js/layout/base/aside-toggle.js'
 
 export default {
 	name: 'KTBrand',

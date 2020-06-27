@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import KTLayoutScrolltop from '@/assets/js/layout/extended/scrolltop.js'
+import KTLayoutScrolltop from '~/assets/js/layout/extended/scrolltop.js'
 
 export default {
 	name: 'KTScrollTop',

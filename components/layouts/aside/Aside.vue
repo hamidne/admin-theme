@@ -39,11 +39,11 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import KTBrand from '@/view/layout/brand/Brand.vue'
+import KTBrand from '~/components/layouts/brand/Brand.vue'
 
-import KTLayoutAside from '@/assets/js/layout/base/aside.js'
-import KTLayoutAsideMenu from '@/assets/js/layout/base/aside-menu.js'
-import KTMenu from '@/view/layout/aside/Menu.vue'
+import KTLayoutAside from '~/assets/js/layout/base/aside.js'
+import KTLayoutAsideMenu from '~/assets/js/layout/base/aside-menu.js'
+import KTMenu from '~/components/layouts/aside/Menu.vue'
 
 export default {
 	name: 'KTAside',

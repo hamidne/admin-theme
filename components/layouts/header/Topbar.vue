@@ -159,13 +159,13 @@
 </style>
 
 <script>
-import KTSearchDefault from '@/view/layout/extras/dropdown/SearchDefault.vue'
-import KTDropdownNotification from '@/view/layout/extras/dropdown/DropdownNotification.vue'
-import KTDropdownQuickAction from '@/view/layout/extras/dropdown/DropdownQuickAction.vue'
-import KTDropdownMyCart from '@/view/layout/extras/dropdown/DropdownMyCart.vue'
-import KTDropdownLanguage from '@/view/layout/extras/dropdown/DropdownLanguage.vue'
-import KTQuickUser from '@/view/layout/extras/offcanvas/QuickUser.vue'
-import KTQuickPanel from '@/view/layout/extras/offcanvas/QuickPanel.vue'
+import KTSearchDefault from '~/components/layouts/extras/dropdown/SearchDefault.vue'
+import KTDropdownNotification from '~/components/layouts/extras/dropdown/DropdownNotification.vue'
+import KTDropdownQuickAction from '~/components/layouts/extras/dropdown/DropdownQuickAction.vue'
+import KTDropdownMyCart from '~/components/layouts/extras/dropdown/DropdownMyCart.vue'
+import KTDropdownLanguage from '~/components/layouts/extras/dropdown/DropdownLanguage.vue'
+import KTQuickUser from '~/components/layouts/extras/offcanvas/QuickUser.vue'
+import KTQuickPanel from '~/components/layouts/extras/offcanvas/QuickPanel.vue'
 import i18nService from '@/core/services/i18n.service.js'
 
 export default {

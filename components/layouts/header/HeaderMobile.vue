@@ -49,7 +49,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import KTLayoutHeaderTopbar from '@/assets/js/layout/base/header-topbar.js'
+import KTLayoutHeaderTopbar from '~/assets/js/layout/base/header-topbar.js'
 
 export default {
 	name: 'KTHeaderMobile',

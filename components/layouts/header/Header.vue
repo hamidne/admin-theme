@@ -29,10 +29,10 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import KTTopbar from '@/view/layout/header/Topbar.vue'
-import KTLayoutHeader from '@/assets/js/layout/base/header.js'
-import KTLayoutHeaderMenu from '@/assets/js/layout/base/header-menu.js'
-import KTMenu from '@/view/layout/header/Menu.vue'
+import KTTopbar from '~/components/layouts/header/Topbar.vue'
+import KTLayoutHeader from '~/assets/js/layout/base/header.js'
+import KTLayoutHeaderMenu from '~/assets/js/layout/base/header-menu.js'
+import KTMenu from '~/components/layouts/header/Menu.vue'
 
 export default {
 	name: 'KTHeader',
