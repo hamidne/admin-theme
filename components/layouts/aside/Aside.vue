@@ -57,6 +57,20 @@ export default {
 			outsideTm: 0,
 		}
 	},
+	computed: {
+		...mapGetters(['layoutConfig', 'getClasses']),
+
+		/**
+		 * Get extra classes for menu based on the options
+		 */
+		asideMenuClass() {
+			const classes = this.getClasses('aside_menu')
+			if (typeof classes !== 'undefined') {
+				return classes.join(' ')
+			}
+			return null
+		},
+	},
 	mounted() {
 		this.$nextTick(() => {
 			// Init Aside
@@ -105,20 +119,6 @@ export default {
 					document.body.classList.add('aside-minimize')
 				}
 			}
-		},
-	},
-	computed: {
-		...mapGetters(['layoutConfig', 'getClasses']),
-
-		/**
-		 * Get extra classes for menu based on the options
-		 */
-		asideMenuClass() {
-			const classes = this.getClasses('aside_menu')
-			if (typeof classes !== 'undefined') {
-				return classes.join(' ')
-			}
-			return null
 		},
 	},
 }

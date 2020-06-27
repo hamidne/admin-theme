@@ -1454,10 +1454,11 @@
 									</li>
 								</router-link>
 
-								<router-link
+								<!-- <router-link
 									v-slot="{ href, navigate, isActive, isExactActive }"
 									to="/wizard/wizard-4"
-								>
+								> -->
+								<router-link to="/wizard/wizard-4">
 									<li
 										aria-haspopup="true"
 										data-menu-toggle="hover"

@@ -1,38 +1,25 @@
 <template>
 	<div class="d-flex flex-column flex-root">
-		<!-- begin:: Header Mobile -->
 		<KTHeaderMobile />
-		<!-- end:: Header Mobile -->
 
 		<Loader v-if="loaderEnabled" :logo="loaderLogo" />
 
-		<!-- begin::Body -->
 		<div class="d-flex flex-row flex-column-fluid page">
-			<!-- begin:: Aside Left -->
 			<KTAside v-if="asideEnabled" />
-			<!-- end:: Aside Left -->
 
 			<div id="kt_wrapper" class="d-flex flex-column flex-row-fluid wrapper">
-				<!-- begin:: Header -->
 				<KTHeader />
-				<!-- end:: Header -->
 
-				<!-- begin:: Content -->
 				<div
 					id="kt_content"
 					class="content d-flex flex-column flex-column-fluid"
 				>
-					<!-- begin:: Content Head -->
-
-					<!-- begin:: Content Head -->
 					<KTSubheader
 						v-if="subheaderDisplay"
 						:breadcrumbs="breadcrumbs"
 						:title="pageTitle"
 					/>
-					<!-- end:: Content Head -->
 
-					<!-- begin:: Content Body -->
 					<div class="d-flex flex-column-fluid">
 						<div
 							:class="{
@@ -41,7 +28,7 @@
 							}"
 						>
 							<transition name="fade-in-up">
-								<router-view />
+								<nuxt />
 							</transition>
 						</div>
 					</div>
@@ -77,7 +64,6 @@ export default {
 		KTScrollTop,
 		Loader,
 	},
-	methods: {},
 	computed: {
 		...mapGetters(['breadcrumbs', 'pageTitle', 'layoutConfig']),
 
@@ -130,5 +116,6 @@ export default {
 			return !!this.layoutConfig('subheader.display')
 		},
 	},
+	methods: {},
 }
 </script>
