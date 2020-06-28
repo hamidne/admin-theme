@@ -1,38 +1,37 @@
-"use strict";
+'use strict'
+import KTUtil from '../../components/util'
 
-var KTLayoutHeaderTopbar = function() {
-    // Private properties
-	var _toggleElement;
-    var _toggleObject;
+var KTLayoutHeaderTopbar = (function () {
+	// Private properties
+	var _toggleElement
+	var _toggleObject
 
-    // Private functions
-    var _init = function() {
-			_toggleObject = new KTToggle(_toggleElement, {
-				target: KTUtil.getBody(),
-				targetState: 'topbar-mobile-on',
-				toggleState: 'active',
-			});
-    }
+	// Private functions
+	var _init = function () {
+		_toggleObject = new KTToggle(_toggleElement, {
+			target: KTUtil.getBody(),
+			targetState: 'topbar-mobile-on',
+			toggleState: 'active',
+		})
+	}
 
-    // Public methods
+	// Public methods
 	return {
-		init: function(id) {
-            _toggleElement = KTUtil.getById(id);
+		init: function (id) {
+			_toggleElement = KTUtil.getById(id)
 
 			if (!_toggleElement) {
-                return;
-            }
+				return
+			}
 
-            // Initialize
-            _init();
+			// Initialize
+			_init()
 		},
 
-        getToggleElement: function() {
-            return _toggleElement;
-        }
-	};
-}();
+		getToggleElement: function () {
+			return _toggleElement
+		},
+	}
+})()
 
-
-
-export default KTLayoutHeaderTopbar;
+export default KTLayoutHeaderTopbar
