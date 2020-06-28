@@ -182,8 +182,8 @@ export default {
 	data() {
 		return {
 			languageFlag: '',
-			languages: 'en',
-			// languages: i18nService.languages,
+			language: 'en',
+			languages: [],
 		}
 	},
 	computed: {
@@ -193,10 +193,10 @@ export default {
 	},
 	methods: {
 		onLanguageChanged() {
-			this.languageFlag = this.languages.find((val) => {
-				return false
-				// return val.lang === i18nService.getActiveLanguage()
-			}).flag
+			this.languageFlag = 'en'
+			// this.languageFlag = this.languages.find((val) => {
+			// return val.lang === i18nService.getActiveLanguage()
+			// }).flag
 		},
 	},
 }

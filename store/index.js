@@ -1,5 +1,9 @@
 import objectPath from 'object-path'
 
+export const state = () => ({
+	classes: {},
+})
+
 export const getters = {
 	layoutConfig: (state) => (path, defaultValue) => {
 		return objectPath.get(state.config, path, defaultValue)

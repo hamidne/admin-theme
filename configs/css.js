@@ -1,1 +1,1 @@
-export default []
+export default ['~/assets/sass/style.vue.scss']

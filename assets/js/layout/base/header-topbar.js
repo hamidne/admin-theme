@@ -1,5 +1,6 @@
 'use strict'
 import KTUtil from '../../components/util'
+import KTToggle from '../../components/toggle'
 
 var KTLayoutHeaderTopbar = (function () {
 	// Private properties
