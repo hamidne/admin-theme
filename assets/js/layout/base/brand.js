@@ -1,4 +1,5 @@
 "use strict";
+import KTUtil from '../../components/util'
 
 var KTLayoutBrand = function() {
     // Private properties

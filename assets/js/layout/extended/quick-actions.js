@@ -1,4 +1,5 @@
 "use strict";
+import KTOffcanvas from '../../components/offcanvas'
 
 var KTLayoutQuickActions = function() {
     // Private properties

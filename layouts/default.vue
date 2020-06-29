@@ -5,7 +5,7 @@
 		<Loader v-if="loaderEnabled" :logo="loaderLogo" />
 
 		<div class="d-flex flex-row flex-column-fluid page">
-			<KTAside v-if="asideEnabled" />
+			<KTAside />
 
 			<div id="kt_wrapper" class="d-flex flex-column flex-row-fluid wrapper">
 				<KTHeader />
@@ -14,11 +14,7 @@
 					id="kt_content"
 					class="content d-flex flex-column flex-column-fluid"
 				>
-					<KTSubheader
-						v-if="subheaderDisplay"
-						:breadcrumbs="breadcrumbs"
-						:title="pageTitle"
-					/>
+					<KTSubheader :breadcrumbs="breadcrumbs" :title="pageTitle" />
 
 					<div class="d-flex flex-column-fluid">
 						<div

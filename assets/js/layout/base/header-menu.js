@@ -1,5 +1,7 @@
 'use strict'
 import KTUtil from '../../components/util'
+import KTMenu from '../../components/menu'
+import KTOffcanvas from '../../components/offcanvas'
 
 var KTLayoutHeaderMenu = (function () {
 	// Private properties

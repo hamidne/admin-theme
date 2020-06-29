@@ -1,4 +1,6 @@
 "use strict";
+import KTUtil from '../../components/util'
+import KTOffcanvas from '../../components/offcanvas'
 
 var KTLayoutAside = function() {
     // Private properties

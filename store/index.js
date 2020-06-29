@@ -1,7 +1,10 @@
 import objectPath from 'object-path'
+import configs from '~/lang/fa/configs'
 
 export const state = () => ({
+	config: configs,
 	classes: {},
+	breadcrumbs: [],
 })
 
 export const getters = {
