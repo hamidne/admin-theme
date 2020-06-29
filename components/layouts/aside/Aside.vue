@@ -49,12 +49,12 @@ export default {
 	name: 'KTAside',
 	components: {
 		KTBrand,
-		KTMenu,
+		KTMenu
 	},
 	data() {
 		return {
 			insideTm: 0,
-			outsideTm: 0,
+			outsideTm: 0
 		}
 	},
 	computed: {
@@ -69,7 +69,7 @@ export default {
 				return classes.join(' ')
 			}
 			return null
-		},
+		}
 	},
 	mounted() {
 		this.$nextTick(() => {
@@ -119,7 +119,7 @@ export default {
 					document.body.classList.add('aside-minimize')
 				}
 			}
-		},
-	},
+		}
+	}
 }
 </script>

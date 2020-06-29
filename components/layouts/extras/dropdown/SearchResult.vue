@@ -62,7 +62,10 @@
 export default {
 	name: 'KTSearchResult',
 	props: {
-		data: Array,
-	},
+		data: {
+			type: Array,
+			required: true
+		}
+	}
 }
 </script>

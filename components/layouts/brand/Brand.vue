@@ -38,6 +38,13 @@ import KTLayoutAsideToggle from '~/assets/js/layout/base/aside-toggle.js'
 
 export default {
 	name: 'KTBrand',
+	computed: {
+		...mapGetters(['layoutConfig']),
+
+		allowMinimize() {
+			return !!this.layoutConfig('aside.self.minimize.toggle')
+		}
+	},
 	mounted() {
 		// Init Brand Panel For Logo
 		KTLayoutBrand.init(this.$refs.kt_brand)
@@ -63,14 +70,7 @@ export default {
 				logo = logos[Object.keys(logos)[0]]
 			}
 			return process.env.BASE_URL + logo
-		},
-	},
-	computed: {
-		...mapGetters(['layoutConfig']),
-
-		allowMinimize() {
-			return !!this.layoutConfig('aside.self.minimize.toggle')
-		},
-	},
+		}
+	}
 }
 </script>

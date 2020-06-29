@@ -93,36 +93,36 @@ export default {
 					desc: 'Best kichen badge in 2020',
 					price: '$ 350',
 					quantity: '5',
-					img: process.env.BASE_URL + 'media/stock-600x400/img-1.jpg',
+					img: process.env.BASE_URL + 'media/stock-600x400/img-1.jpg'
 				},
 				{
 					title: 'SmartCleaner',
 					desc: 'Smart tool for cooking',
 					price: '$ 650',
 					quantity: '4',
-					img: process.env.BASE_URL + 'media/stock-600x400/img-2.jpg',
+					img: process.env.BASE_URL + 'media/stock-600x400/img-2.jpg'
 				},
 				{
 					title: 'CameraX',
 					desc: 'Professional camera for edge cutting shots',
 					price: '$ 150',
 					quantity: '3',
-					img: process.env.BASE_URL + 'media/stock-600x400/img-3.jpg',
+					img: process.env.BASE_URL + 'media/stock-600x400/img-3.jpg'
 				},
 				{
 					title: '3DPrinted',
 					desc: 'Manufactoring unique objects',
 					price: '$ 1450',
 					quantity: '7',
-					img: process.env.BASE_URL + 'media/stock-600x400/img-4.jpg',
-				},
-			],
+					img: process.env.BASE_URL + 'media/stock-600x400/img-4.jpg'
+				}
+			]
 		}
 	},
 	computed: {
 		backgroundImage() {
 			return process.env.BASE_URL + 'media/misc/bg-1.jpg'
-		},
-	},
+		}
+	}
 }
 </script>

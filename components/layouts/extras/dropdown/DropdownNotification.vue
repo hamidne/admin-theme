@@ -153,13 +153,13 @@ export default {
 					title: 'Briviba SaaS',
 					desc: 'PHP, SQLite, Artisan CLIмм',
 					color: 'primary',
-					svg: process.env.BASE_URL + 'media/svg/icons/Home/Library.svg',
+					svg: process.env.BASE_URL + 'media/svg/icons/Home/Library.svg'
 				},
 				{
 					title: 'Briviba SaaS',
 					desc: 'PHP, SQLite, Artisan CLIмм',
 					color: 'warning',
-					svg: process.env.BASE_URL + 'media/svg/icons/Communication/Write.svg',
+					svg: process.env.BASE_URL + 'media/svg/icons/Communication/Write.svg'
 				},
 				{
 					title: 'Briviba SaaS',
@@ -167,13 +167,13 @@ export default {
 					color: 'success',
 					svg:
 						process.env.BASE_URL +
-						'media/svg/icons/Communication/Group-chat.svg',
+						'media/svg/icons/Communication/Group-chat.svg'
 				},
 				{
 					title: 'Briviba SaaS',
 					desc: 'PHP, SQLite, Artisan CLIмм',
 					color: 'danger',
-					svg: process.env.BASE_URL + 'media/svg/icons/General/Attachment2.svg',
+					svg: process.env.BASE_URL + 'media/svg/icons/General/Attachment2.svg'
 				},
 				{
 					title: 'Briviba SaaS',
@@ -181,7 +181,7 @@ export default {
 					color: 'info',
 					svg:
 						process.env.BASE_URL +
-						'media/svg/icons/Communication/Shield-user.svg',
+						'media/svg/icons/Communication/Shield-user.svg'
 				},
 				{
 					title: 'Briviba SaaS',
@@ -189,83 +189,83 @@ export default {
 					color: 'info',
 					svg:
 						process.env.BASE_URL +
-						'media/svg/icons/Communication/Mail-notification.svg',
+						'media/svg/icons/Communication/Mail-notification.svg'
 				},
 				{
 					title: 'Briviba SaaS',
 					desc: 'PHP, SQLite, Artisan CLIмм',
 					color: 'info',
-					svg: process.env.BASE_URL + 'media/svg/icons/Design/Bucket.svg',
-				},
+					svg: process.env.BASE_URL + 'media/svg/icons/Design/Bucket.svg'
+				}
 			],
 			list2: [
 				{
 					title: 'New report has been received',
 					desc: '23 hrs ago',
-					icon: 'flaticon2-line-chart text-success',
+					icon: 'flaticon2-line-chart text-success'
 				},
 				{
 					title: 'Finance report has been generated',
 					desc: '25 hrs ago',
-					icon: 'flaticon2-paper-plane text-danger',
+					icon: 'flaticon2-paper-plane text-danger'
 				},
 				{
 					title: 'New order has been received',
 					desc: '2 hrs ago',
-					icon: 'flaticon2-user flaticon2-line- text-success',
+					icon: 'flaticon2-user flaticon2-line- text-success'
 				},
 				{
 					title: 'New customer is registered',
 					desc: '3 hrs ago',
-					icon: 'flaticon2-pin text-primary',
+					icon: 'flaticon2-pin text-primary'
 				},
 				{
 					title: 'Application has been approved',
 					desc: '3 hrs ago',
-					icon: 'flaticon2-sms text-danger',
+					icon: 'flaticon2-sms text-danger'
 				},
 				{
 					title: 'New file has been uploaded',
 					desc: '5 hrs ago',
-					icon: 'flaticon2-pie-chart-3 text-warning',
+					icon: 'flaticon2-pie-chart-3 text-warning'
 				},
 				{
 					title: 'New user feedback received',
 					desc: '8 hrs ago',
-					icon: 'flaticon-pie-chart-1 text-info',
+					icon: 'flaticon-pie-chart-1 text-info'
 				},
 				{
 					title: 'System reboot has been successfully completed',
 					desc: '12 hrs ago',
-					icon: 'flaticon2-settings text-success',
+					icon: 'flaticon2-settings text-success'
 				},
 				{
 					title: 'New order has been placed',
 					desc: '15 hrs ago',
-					icon: 'flaticon-safe-shield-protection text-primary',
+					icon: 'flaticon-safe-shield-protection text-primary'
 				},
 				{
 					title: 'Company meeting canceled',
 					desc: '19 hrs ago',
-					icon: 'flaticon2-notification text-primary',
+					icon: 'flaticon2-notification text-primary'
 				},
 				{
 					title: 'New report has been received',
 					desc: '23 hrs ago',
-					icon: 'flaticon2-fax text-success',
+					icon: 'flaticon2-fax text-success'
 				},
 				{
 					title: 'Finance report has been generated',
 					desc: '25 hrs ago',
-					icon: 'flaticon-download-1 text-danger',
-				},
-			],
+					icon: 'flaticon-download-1 text-danger'
+				}
+			]
 		}
 	},
 	computed: {
 		backgroundImage() {
 			return process.env.BASE_URL + 'media/misc/bg-1.jpg'
-		},
+		}
 	},
 	methods: {
 		setActiveTab(event) {
@@ -281,7 +281,7 @@ export default {
 
 			// set current active tab
 			event.target.classList.add('active')
-		},
-	},
+		}
+	}
 }
 </script>

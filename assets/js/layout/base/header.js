@@ -1,72 +1,73 @@
-'use strict'
-import KTUtil from '../../components/util'
+"use strict";
 
-var KTLayoutHeader = (function () {
-	// Private properties
-	var _element
-	var _elementForMobile
-	var _object
+var KTLayoutHeader = function() {
+    // Private properties
+    var _element;
+    var _elementForMobile;
+    var _object;
 
 	// Private functions
-	// Get Height
-	var _getHeight = function () {
-		var height = 0
+    // Get Height
+    var _getHeight = function() {
+        var height = 0;
 
-		if (_element) {
-			height = KTUtil.actualHeight(_element) + 1
-		}
+        if (_element) {
+            height = KTUtil.actualHeight(_element) + 1;
+        }
 
-		return height
-	}
+        return height;
+    }
 
-	// Get Height
-	var _getHeightForMobile = function () {
-		var height
+    // Get Height
+    var _getHeightForMobile = function() {
+        var height;
 
-		height = KTUtil.actualHeight(_elementForMobile)
+        height = KTUtil.actualHeight(_elementForMobile);
 
-		return height
-	}
+        return height;
+    }
 
-	// Public Methods
+    // Public Methods
 	return {
-		init: function (id, idForMobile) {
-			_element = KTUtil.getById(id)
-			_elementForMobile = KTUtil.getById(idForMobile)
+		init: function(id, idForMobile) {
+            _element = KTUtil.getById(id);
+            _elementForMobile = KTUtil.getById(idForMobile);
 
-			if (!_element) {
-				return
-			}
+            if (!_element) {
+                return;
+            }
 		},
 
-		isFixed: function () {
-			return KTUtil.hasClass(KTUtil.getBody(), 'header-fixed')
-		},
+        isFixed: function() {
+            return KTUtil.hasClass(KTUtil.getBody(), 'header-fixed')
+        },
 
-		isFixedForMobile: function () {
-			return KTUtil.hasClass(KTUtil.getBody(), 'header-mobile-fixed')
-		},
+        isFixedForMobile: function() {
+            return KTUtil.hasClass(KTUtil.getBody(), 'header-mobile-fixed')
+        },
 
-		getElement: function () {
-			return _element
-		},
+        getElement: function() {
+            return _element;
+        },
 
-		getElementForMobile: function () {
-			return _elementForMobile
-		},
+        getElementForMobile: function() {
+            return _elementForMobile;
+        },
 
-		getHeader: function () {
-			return _object
-		},
+        getHeader: function() {
+            return _object;
+        },
 
-		getHeight: function () {
-			return _getHeight()
-		},
+        getHeight: function() {
+            return _getHeight();
+        },
 
-		getHeightForMobile: function () {
-			return _getHeightForMobile()
-		},
-	}
-})()
+        getHeightForMobile: function() {
+            return _getHeightForMobile();
+        }
+	};
+}();
 
-export default KTLayoutHeader
+
+
+export default KTLayoutHeader;

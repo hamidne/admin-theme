@@ -20,7 +20,7 @@
 						<div
 							:class="{
 								'container-fluid': contentFluid,
-								container: !contentFluid,
+								container: !contentFluid
 							}"
 						>
 							<transition name="fade-in-up">
@@ -58,7 +58,7 @@ export default {
 		KTSubheader,
 		KTStickyToolbar,
 		KTScrollTop,
-		Loader,
+		Loader
 	},
 	computed: {
 		...mapGetters(['breadcrumbs', 'pageTitle', 'layoutConfig']),
@@ -110,8 +110,8 @@ export default {
 		 */
 		subheaderDisplay() {
 			return !!this.layoutConfig('subheader.display')
-		},
+		}
 	},
-	methods: {},
+	methods: {}
 }
 </script>

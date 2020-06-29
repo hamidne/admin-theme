@@ -6,20 +6,20 @@ export default {
 			dark: 'media/logos/logo-light.png',
 			light: 'media/logos/logo-dark.png',
 			brand: 'media/logos/logo-light.png',
-			green: 'media/logos/logo-light.png',
-		},
+			green: 'media/logos/logo-light.png'
+		}
 	},
 	loader: {
 		type: 'spinner-logo',
 		logo: 'media/logos/logo-letter-1.png',
-		message: 'Please wait...',
+		message: 'Please wait...'
 	},
 	breakpoints: {
 		sm: 576,
 		md: 768,
 		lg: 992,
 		xl: 1200,
-		xxl: 1200,
+		xxl: 1200
 	},
 	colors: {
 		theme: {
@@ -32,7 +32,7 @@ export default {
 				warning: '#FFA800',
 				danger: '#F64E60',
 				light: '#F3F6F9',
-				dark: '#212121',
+				dark: '#212121'
 			},
 			light: {
 				white: '#ffffff',
@@ -43,7 +43,7 @@ export default {
 				warning: '#FFF4DE',
 				danger: '#FFE2E5',
 				light: '#F3F6F9',
-				dark: '#D6D6E0',
+				dark: '#D6D6E0'
 			},
 			inverse: {
 				white: '#ffffff',
@@ -54,8 +54,8 @@ export default {
 				warning: '#ffffff',
 				danger: '#ffffff',
 				light: '#464E5F',
-				dark: '#ffffff',
-			},
+				dark: '#ffffff'
+			}
 		},
 		gray: {
 			'gray-100': '#F3F6F9',
@@ -66,8 +66,8 @@ export default {
 			'gray-600': '#80808F',
 			'gray-700': '#464E5F',
 			'gray-800': '#1B283F',
-			'gray-900': '#212121',
-		},
+			'gray-900': '#212121'
+		}
 	},
 	'font-family': 'Poppins',
 	header: {
@@ -77,30 +77,30 @@ export default {
 			theme: 'light',
 			fixed: {
 				desktop: true,
-				mobile: true,
-			},
+				mobile: true
+			}
 		},
 		menu: {
 			self: {
 				display: true,
 				layout: 'default',
-				'root-arrow': false,
+				'root-arrow': false
 			},
 			desktop: {
 				arrow: true,
 				toggle: 'click',
 				submenu: {
 					theme: 'light',
-					arrow: true,
-				},
+					arrow: true
+				}
 			},
 			mobile: {
 				submenu: {
 					theme: 'dark',
-					accordion: true,
-				},
-			},
-		},
+					accordion: true
+				}
+			}
+		}
 	},
 	subheader: {
 		display: true,
@@ -110,15 +110,15 @@ export default {
 		fixed: true,
 		width: 'fluid',
 		clear: false,
-		style: 'solid',
+		style: 'solid'
 	},
 	content: {
-		width: 'fixed',
+		width: 'fixed'
 	},
 	brand: {
 		self: {
-			theme: 'dark',
-		},
+			theme: 'dark'
+		}
 	},
 	aside: {
 		self: {
@@ -128,13 +128,13 @@ export default {
 			minimize: {
 				toggle: true,
 				default: false,
-				hoverable: true,
-			},
+				hoverable: true
+			}
 		},
 		footer: {
 			self: {
-				display: true,
-			},
+				display: true
+			}
 		},
 		menu: {
 			dropdown: false,
@@ -143,13 +143,13 @@ export default {
 				accordion: true,
 				dropdown: {
 					arrow: true,
-					'hover-timeout': 500,
-				},
-			},
-		},
+					'hover-timeout': 500
+				}
+			}
+		}
 	},
 	footer: {
 		width: 'fluid',
-		fixed: false,
-	},
+		fixed: false
+	}
 }

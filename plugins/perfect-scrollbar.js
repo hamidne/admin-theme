@@ -1,5 +1,7 @@
 import Vue from 'vue'
-import PerfectScrollbar from 'vue2-perfect-scrollbar'
+import PerfectScrollbar from 'perfect-scrollbar'
+import VuePerfectScrollbar from 'vue2-perfect-scrollbar'
 
 // Perfect scrollbar
-Vue.use(PerfectScrollbar)
+Vue.use(VuePerfectScrollbar)
+window.PerfectScrollbar = PerfectScrollbar

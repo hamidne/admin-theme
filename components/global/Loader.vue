@@ -12,7 +12,7 @@ export default {
 	name: 'Loader',
 	props: {
 		logo: { type: String, default: '' },
-		spinnerClass: { type: String, default: '' },
-	},
+		spinnerClass: { type: String, default: '' }
+	}
 }
 </script>

@@ -29,7 +29,7 @@ export default {
 	name: 'KTDropdownLanguage',
 	data() {
 		return {
-			languages: 'en',
+			languages: 'en'
 			// languages: i18nService.languages,
 		}
 	},
@@ -37,7 +37,7 @@ export default {
 		activeLanguage() {
 			return ''
 			// return i18nService.getActiveLanguage()
-		},
+		}
 	},
 	methods: {
 		selectedLanguage(e) {
@@ -57,7 +57,7 @@ export default {
 		},
 		isActiveLanguage(current) {
 			return this.activeLanguage === current
-		},
-	},
+		}
+	}
 }
 </script>

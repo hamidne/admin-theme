@@ -356,26 +356,26 @@ export default {
 					title: 'Top Authors',
 					desc: 'Most Successful Fellas',
 					alt: '+82$',
-					svg: 'media/svg/misc/006-plurk.svg',
+					svg: 'media/svg/misc/006-plurk.svg'
 				},
 				{
 					title: 'Popular Authors',
 					desc: 'Most Successful Fellas',
 					alt: '+280$',
-					svg: 'media/svg/misc/006-plurk.svg',
+					svg: 'media/svg/misc/006-plurk.svg'
 				},
 				{
 					title: 'New Users',
 					desc: 'Most Successful Fellas',
 					alt: '+4500$',
-					svg: 'media/svg/misc/015-telegram.svg',
+					svg: 'media/svg/misc/015-telegram.svg'
 				},
 				{
 					title: 'Active Customers',
 					desc: 'Most Successful Fellas',
 					alt: '+4500$',
-					svg: 'media/svg/misc/003-puzzle.svg',
-				},
+					svg: 'media/svg/misc/003-puzzle.svg'
+				}
 			],
 			list2: [
 				{
@@ -383,97 +383,97 @@ export default {
 					desc: 'Due in 2 Days',
 					alt: '+28%',
 					svg: 'media/svg/icons/Home/Library.svg',
-					type: 'warning',
+					type: 'warning'
 				},
 				{
 					title: 'Would be to people',
 					desc: 'Due in 2 Days',
 					alt: '+50%',
 					svg: 'media/svg/icons/Communication/Write.svg',
-					type: 'success',
+					type: 'success'
 				},
 				{
 					title: 'Purpose would be to persuade',
 					desc: 'Due in 2 Days',
 					alt: '-27%',
 					svg: 'media/svg/icons/Communication/Group-chat.svg',
-					type: 'danger',
+					type: 'danger'
 				},
 				{
 					title: 'The best product',
 					desc: 'Due in 2 Days',
 					alt: '+8%',
 					svg: 'media/svg/icons/General/Attachment2.svg',
-					type: 'info',
-				},
+					type: 'info'
+				}
 			],
 			list3: [
 				{
 					title: '5 new user generated report',
 					desc: 'Reports based on sales',
-					icon: 'flaticon-bell text-success',
+					icon: 'flaticon-bell text-success'
 				},
 				{
 					title: '2 new items submited',
 					desc: 'by Grog John',
-					icon: 'flaticon2-box text-danger',
+					icon: 'flaticon2-box text-danger'
 				},
 				{
 					title: '79 PSD files generated',
 					desc: 'Reports based on sales',
-					icon: 'flaticon-psd text-primary',
+					icon: 'flaticon-psd text-primary'
 				},
 				{
 					title: '$2900 worth producucts sold',
 					desc: 'Total 234 items',
-					icon: 'flaticon2-supermarket text-warning',
+					icon: 'flaticon2-supermarket text-warning'
 				},
 				{
 					title: '4.5h-avarage response time',
 					desc: 'Fostest is Barry',
-					icon: 'flaticon-paper-plane-1 text-success',
+					icon: 'flaticon-paper-plane-1 text-success'
 				},
 				{
 					title: '3 Defence alerts',
 					desc: '40% less alerts thar last week',
-					icon: 'flaticon-safe-shield-protection text-danger',
+					icon: 'flaticon-safe-shield-protection text-danger'
 				},
 				{
 					title: 'Avarage 4 blog posts per author',
 					desc: 'Most posted 12 time',
-					icon: 'flaticon-notepad text-primary',
+					icon: 'flaticon-notepad text-primary'
 				},
 				{
 					title: '16 authors joined last week',
 					desc: '9 photodrapehrs, 7 designer',
-					icon: 'flaticon-users-1 text-warning',
+					icon: 'flaticon-users-1 text-warning'
 				},
 				{
 					title: '2 new items have been submited',
 					desc: 'by Grog John',
-					icon: 'flaticon2-box text-info',
+					icon: 'flaticon2-box text-info'
 				},
 				{
 					title: '2.8 GB-total downloads size',
 					desc: 'Mostly PSD end  AL concepts',
-					icon: 'flaticon2-download text-success',
+					icon: 'flaticon2-download text-success'
 				},
 				{
 					title: '$2900 worth producucts sold',
 					desc: 'Total 234 items',
-					icon: 'flaticon2-supermarket text-danger',
+					icon: 'flaticon2-supermarket text-danger'
 				},
 				{
 					title: '7 new user generated report',
 					desc: 'Reports based on sales',
-					icon: 'flaticon-bell text-primary',
+					icon: 'flaticon-bell text-primary'
 				},
 				{
 					title: '4.5h-avarage response time',
 					desc: 'Fostest is Barry',
-					icon: 'flaticon-paper-plane-1 text-success',
-				},
-			],
+					icon: 'flaticon-paper-plane-1 text-success'
+				}
+			]
 		}
 	},
 	mounted() {
@@ -498,7 +498,7 @@ export default {
 
 			// set current active tab
 			event.target.classList.add('active')
-		},
-	},
+		}
+	}
 }
 </script>

@@ -177,19 +177,19 @@ export default {
 		KTDropdownMyCart,
 		KTDropdownLanguage,
 		KTQuickUser,
-		KTQuickPanel,
+		KTQuickPanel
 	},
 	data() {
 		return {
 			languageFlag: '',
 			language: 'en',
-			languages: [],
+			languages: []
 		}
 	},
 	computed: {
 		getLanguageFlag() {
 			return this.onLanguageChanged()
-		},
+		}
 	},
 	methods: {
 		onLanguageChanged() {
@@ -197,7 +197,7 @@ export default {
 			// this.languageFlag = this.languages.find((val) => {
 			// return val.lang === i18nService.getActiveLanguage()
 			// }).flag
-		},
-	},
+		}
+	}
 }
 </script>

@@ -16,6 +16,6 @@ export default {
 	mounted() {
 		// Init Scrolltop
 		KTLayoutScrolltop.init(this.$refs.kt_scrolltop)
-	},
+	}
 }
 </script>

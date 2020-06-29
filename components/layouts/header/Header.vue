@@ -38,17 +38,7 @@ export default {
 	name: 'KTHeader',
 	components: {
 		KTTopbar,
-		KTMenu,
-	},
-	mounted() {
-		// Init Desktop & Mobile Headers
-		KTLayoutHeader.init('kt_header', 'kt_header_mobile')
-
-		// Init Header Menu
-		KTLayoutHeaderMenu.init(
-			this.$refs.kt_header_menu,
-			this.$refs.kt_header_menu_wrapper
-		)
+		KTMenu
 	},
 	computed: {
 		...mapGetters(['layoutConfig', 'getClasses']),
@@ -83,7 +73,17 @@ export default {
 				return classes.join(' ')
 			}
 			return null
-		},
+		}
 	},
+	mounted() {
+		// Init Desktop & Mobile Headers
+		KTLayoutHeader.init('kt_header', 'kt_header_mobile')
+
+		// Init Header Menu
+		KTLayoutHeaderMenu.init(
+			this.$refs.kt_header_menu,
+			this.$refs.kt_header_menu_wrapper
+		)
+	}
 }
 </script>

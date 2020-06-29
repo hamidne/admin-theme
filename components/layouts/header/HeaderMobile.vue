@@ -54,10 +54,6 @@ import KTLayoutHeaderTopbar from '~/assets/js/layout/base/header-topbar.js'
 export default {
 	name: 'KTHeaderMobile',
 	components: {},
-	mounted() {
-		// Init Header Topbar For Mobile Mode
-		KTLayoutHeaderTopbar.init(this.$refs.kt_header_mobile_topbar_toggle)
-	},
 	computed: {
 		...mapGetters(['layoutConfig', 'getClasses']),
 
@@ -87,7 +83,11 @@ export default {
 		 */
 		asideEnabled() {
 			return !!this.layoutConfig('aside.self.display')
-		},
+		}
 	},
+	mounted() {
+		// Init Header Topbar For Mobile Mode
+		KTLayoutHeaderTopbar.init(this.$refs.kt_header_mobile_topbar_toggle)
+	}
 }
 </script>

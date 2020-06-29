@@ -16,5 +16,5 @@ export default {
 	axios,
 	modules,
 	plugins,
-	buildModules,
+	buildModules
 }

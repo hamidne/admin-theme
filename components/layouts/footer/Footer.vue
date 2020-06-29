@@ -58,7 +58,7 @@ export default {
 		 */
 		widthFluid() {
 			return this.layoutConfig('footer.width') === 'fluid'
-		},
-	},
+		}
+	}
 }
 </script>

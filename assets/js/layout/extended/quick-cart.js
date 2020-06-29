@@ -1,5 +1,4 @@
 "use strict";
-import KTOffcanvas from '../../components/offcanvas'
 
 var KTLayoutQuickCartPanel = function() {
     // Private properties

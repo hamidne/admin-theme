@@ -173,8 +173,14 @@ import { mapGetters } from 'vuex'
 export default {
 	name: 'KTSubheader',
 	props: {
-		breadcrumbs: Array,
-		title: String,
+		breadcrumbs: {
+			type: Array,
+			required: true
+		},
+		title: {
+			type: String,
+			default: ''
+		}
 	},
 	computed: {
 		...mapGetters(['layoutConfig']),
@@ -201,7 +207,7 @@ export default {
 				}
 			}
 			return classes.join(' ')
-		},
-	},
+		}
+	}
 }
 </script>

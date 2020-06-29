@@ -4,7 +4,7 @@ import configs from '~/lang/fa/configs'
 export const state = () => ({
 	config: configs,
 	classes: {},
-	breadcrumbs: [],
+	breadcrumbs: []
 })
 
 export const getters = {
@@ -25,5 +25,5 @@ export const getters = {
 			return state.classes[position]
 		}
 		return state.classes
-	},
+	}
 }
