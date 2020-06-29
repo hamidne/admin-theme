@@ -112,6 +112,14 @@ export default {
 			return !!this.layoutConfig('subheader.display')
 		}
 	},
-	methods: {}
+	methods: {},
+	head() {
+		return {
+			bodyAttrs: {
+				class:
+					'quick-panel-right demo-panel-right offcanvas-right header-fixed header-mobile-fixed subheader-fixed subheader-enabled subheader-solid aside-enabled aside-fixed'
+			}
+		}
+	}
 }
 </script>
