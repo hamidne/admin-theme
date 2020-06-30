@@ -1,7 +1,5 @@
 <template>
-	<div class="container">
-		<div>Bootstrap Admin Panel</div>
-	</div>
+	<div>Bootstrap Admin Panel</div>
 </template>
 
 <script>

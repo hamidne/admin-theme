@@ -1,6 +1,11 @@
 <template>
 	<!-- begin:: Header -->
-	<div id="kt_header" ref="kt_header" class="header" :class="headerClasses">
+	<div
+		id="kt_header"
+		ref="kt_header"
+		class="header header-fixed"
+		:class="headerClasses"
+	>
 		<div
 			class="container-fluid d-flex align-items-center justify-content-between"
 		>

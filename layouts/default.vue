@@ -1,5 +1,5 @@
 <template>
-	<div class="d-flex flex-column flex-root">
+	<div class="d-flex flex-column flex-root min-vh-100">
 		<KTHeaderMobile />
 
 		<Loader v-if="loaderEnabled" :logo="loaderLogo" />
