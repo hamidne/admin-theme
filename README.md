@@ -1,4 +1,4 @@
-# paasta-admin
+# Bootstrap Admin Panel
 
 ## Build Setup
 

@@ -1,55 +1,125 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+	<div class="d-flex flex-column flex-root min-vh-100">
+		<KTHeaderMobile />
+
+		<Loader v-if="loaderEnabled" :logo="loaderLogo" />
+
+		<div class="d-flex flex-row flex-column-fluid page">
+			<KTAside />
+
+			<div id="kt_wrapper" class="d-flex flex-column flex-row-fluid wrapper">
+				<KTHeader />
+
+				<div
+					id="kt_content"
+					class="content d-flex flex-column flex-column-fluid"
+				>
+					<KTSubheader :breadcrumbs="breadcrumbs" :title="pageTitle" />
+
+					<div class="d-flex flex-column-fluid">
+						<div
+							:class="{
+								'container-fluid': contentFluid,
+								container: !contentFluid
+							}"
+						>
+							<transition name="fade-in-up">
+								<nuxt />
+							</transition>
+						</div>
+					</div>
+				</div>
+				<KTFooter />
+			</div>
+		</div>
+		<KTStickyToolbar v-if="toolbarDisplay" />
+		<KTScrollTop />
+	</div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import { mapGetters } from 'vuex'
+import KTAside from '~/components/layouts/aside/Aside.vue'
+import KTHeader from '~/components/layouts/header/Header.vue'
+import KTHeaderMobile from '~/components/layouts/header/HeaderMobile.vue'
+import KTFooter from '~/components/layouts/footer/Footer.vue'
+import KTSubheader from '~/components/layouts/subheader/Subheader.vue'
+import KTStickyToolbar from '~/components/layouts/extras/StickyToolbar.vue'
+import KTScrollTop from '~/components/layouts/extras/ScrollTop'
+import Loader from '~/components/global/Loader.vue'
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
+export default {
+	name: 'Layout',
+	components: {
+		KTAside,
+		KTHeader,
+		KTHeaderMobile,
+		KTFooter,
+		KTSubheader,
+		KTStickyToolbar,
+		KTScrollTop,
+		Loader
+	},
+	computed: {
+		...mapGetters(['breadcrumbs', 'pageTitle', 'layoutConfig']),
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+		/**
+		 * Check if the page loader is enabled
+		 * @returns {boolean}
+		 */
+		loaderEnabled() {
+			return !/false/.test(this.layoutConfig('loader.type'))
+		},
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+		/**
+		 * Check if container width is fluid
+		 * @returns {boolean}
+		 */
+		contentFluid() {
+			return this.layoutConfig('content.width') === 'fluid'
+		},
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+		/**
+		 * Page loader logo image using require() function
+		 * @returns {string}
+		 */
+		loaderLogo() {
+			return process.env.BASE_URL + this.layoutConfig('loader.logo')
+		},
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+		/**
+		 * Check if the left aside menu is enabled
+		 * @returns {boolean}
+		 */
+		asideEnabled() {
+			return !!this.layoutConfig('aside.self.display')
+		},
+
+		/**
+		 * Set the right toolbar display
+		 * @returns {boolean}
+		 */
+		toolbarDisplay() {
+			// return !!this.layoutConfig("toolbar.display");
+			return true
+		},
+
+		/**
+		 * Set the subheader display
+		 * @returns {boolean}
+		 */
+		subheaderDisplay() {
+			return !!this.layoutConfig('subheader.display')
+		}
+	},
+	methods: {},
+	head() {
+		return {
+			bodyAttrs: {
+				class:
+					'quick-panel-right demo-panel-right offcanvas-right header-fixed header-mobile-fixed subheader-fixed subheader-enabled subheader-solid aside-enabled aside-fixed'
+			}
+		}
+	}
 }
-</style>
+</script>
